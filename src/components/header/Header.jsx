@@ -2,6 +2,7 @@ import nav_logo from "../../assets/images/nav_logo.jpeg";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
+import arrow from "../../assets/images/arrow_down.png";
 import "../../../index.css";
 import "./header.css";
 
@@ -9,6 +10,10 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
+        <div className="arrow-container">
+          <p className="arrow-text">SCROLL</p>
+          <img className="arrow-img" src={arrow} alt="arrow down" />
+        </div>
         <div className="black_wall">
           <nav className="nav-container">
             <figure className="nav-logo">
