@@ -1,7 +1,7 @@
-import nav_logo from "../assets/images/nav_logo.jpeg";
-import github from "../assets/images/github.png";
-import linkedIn from "../assets/images/linkedin.png";
-import email from "../assets/images/email.png";
+import nav_logo from "../../assets/images/nav_logo.jpeg";
+import github from "../../assets/images/github.png";
+import linkedIn from "../../assets/images/linkedin.png";
+import email from "../../assets/images/email.png";
 import "./header.css";
 
 export default function Header() {
@@ -40,24 +40,41 @@ export default function Header() {
             <article className="main-container">
               <section className="main-logos">
                 <button className="main-logo">
-                  <img src={github} alt="" href="" />
+                  <a
+                    href="https://github.com/mvacjar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={github} alt="github" />
+                  </a>
                 </button>
                 <button className="main-logo">
-                  <img
-                    src={linkedIn}
-                    alt=""
+                  <a
                     href="https://www.linkedin.com/in/mvacjar/"
-                  />
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={linkedIn} alt="" />
+                  </a>
                 </button>
                 <button className="main-logo">
-                  <img src={email} alt="" />
+                  <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
+                    <img src={email} alt="" />
+                  </a>
                 </button>
               </section>
               <section className="main-title">
                 <h1 className="main-name">MARIA VACA JAREÑO</h1>
                 <h2 className="main-profession">FRONTEND DEVELOPER</h2>
                 <div className="main-container-button">
-                  <button className="main-button">HIRE ME</button>
+                  <button className="main-button">
+                    <a
+                      href="mailto:mvacjar@gmail.com"
+                      rel="noopener noreferrer"
+                    >
+                      HIRE ME
+                    </a>
+                  </button>
                 </div>
               </section>
             </article>
