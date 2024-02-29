@@ -1,0 +1,35 @@
+/* --- Reset and Global Style--- */
+:root {
+  --font-size-xs: 1rem;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+  --font-size-xxl: 10rem;
+  --color-white: #e6e5e5;
+  --color-black: #131313;
+  --color-orange: #f1911d;
+  --color-creme: #f1edde;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

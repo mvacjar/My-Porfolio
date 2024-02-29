@@ -1,45 +1,11 @@
-/* --- Reset --- */
-:root {
-  --font-size-xs: 1rem;
-  --font-size-sm: 1.2rem;
-  --font-size-md: 1.5rem;
-  --font-size-lg: 2rem;
-  --font-size-xl: 3rem;
-  --font-size-xxl: 10rem;
-  --color-white: #e6e5e5;
-  --color-black: #131313;
-  --color-orange: #f1911d;
-}
-
-* {
-  font-family: sans-serif;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-black);
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
 /* --- Nav Section --- */
-.body-container {
+.header-container {
   background-image: url("../../assets/images/background_azahar.png");
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
-.arrow {
+.black_wall {
   min-height: 100vh;
   background-color: var(--color-black);
   max-width: 70%;
@@ -79,6 +45,11 @@ img {
   max-width: 6rem;
   padding: 1rem;
   margin-right: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(0.9);
 }
 
 .nav-links {
@@ -94,6 +65,15 @@ img {
   color: var(--color-orange);
   font-weight: 800;
   margin: 0 1rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.nav-link:active {
+  transform: scale(1);
 }
 
 .nav-link:last-child {
@@ -124,7 +104,7 @@ img {
   margin: 0rem 0rem 1rem 3rem;
   background: transparent;
   border: none;
-  transition: trnasform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .main-logo:hover {
@@ -200,7 +180,7 @@ img {
   font-weight: 800;
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   background-color: var(--color-orange);
-  transition: trnasform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .main-button:hover {
