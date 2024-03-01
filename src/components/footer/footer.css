@@ -1,25 +1,37 @@
 .footer {
-  background-image: url("../../assets/images/background_azahar.png");
-  background-size: cover;
-  scroll-behavior: smooth;
+  position: relative;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Add this line */
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/background_azahar.png");
+  background-size: cover;
+  filter: blur(6px) brightness(50%); /* Add this line */
+  z-index: -1;
 }
 
 .footer-container {
-  max-width: 40rem;
-  background: #ffffffc0;
-  box-shadow: 2px 2px 15px var(--color-black);
-  padding: 3rem;
-  margin: 6rem;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 50rem;
+  padding: 3rem;
+  margin: 6rem;
+  text-align: center;
+  background-color: var(--color-white);
+  border-radius: 24px;
 }
 
 .footer-title {
@@ -28,29 +40,49 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-size: clamp(1.5rem, 4vw, 5rem);
   color: var(--color-black);
   margin-bottom: 2rem;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container textarea {
+.form-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.name,
+.email {
   display: block;
   width: 100%;
-  height: 45px;
-  padding: 7px;
-  margin-bottom: 10px;
+  height: 3rem;
+  /* padding: 7px; */
+
   border: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-orange);
   background: transparent;
   outline: none;
 }
 
-.form-container textarea {
+.name {
+  margin-right: 2rem;
+}
+
+.message {
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+  /* padding: 7px; */
+  border: none;
+  border-bottom: 1px solid var(--color-orange);
+  background: transparent;
   resize: none;
   overflow: hidden;
-  margin-bottom: 2rem;
+  outline: none;
 }
 
 .footer-button {
@@ -91,14 +123,13 @@
   align-items: center;
   width: 100%;
   background-color: var(--color-black);
-  padding: 2rem;
 }
 
 .footer-logo {
   width: 2.5rem;
   background: transparent;
   border: none;
-  margin: 3rem 2rem;
+  margin: 2rem 2rem 1.5rem;
   transition: transform 0.1s ease;
 }
 
@@ -111,8 +142,23 @@
 }
 
 .footer-logo-title {
+  width: 100%;
+  background-color: var(--color-black);
   color: var(--color-creme);
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   text-align: center;
-  padding: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo-link {
+  color: var(--color-orange);
+  transition: transform 0.1s ease;
+}
+
+.footer-logo-link:hover {
+  transform: scale(1.1);
+}
+
+.footer-logo-link:active {
+  transform: scale(1);
 }

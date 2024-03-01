@@ -6,10 +6,12 @@ import arrow from "../../assets/images/arrow_down.png";
 import "../../../index.css";
 import "./header.css";
 
+import { HashLink as Link } from "react-router-hash-link";
+
 export default function Header() {
   return (
     <>
-      <div className="header-container">
+      <div className="header-container" id="Header">
         <div className="arrow-container">
           <p className="arrow-text">SCROLL</p>
           <img className="arrow-img" src={arrow} alt="arrow down" />
@@ -21,24 +23,44 @@ export default function Header() {
             </figure>
             <ul className="nav-links">
               <li>
-                <a className="nav-link" href="/">
-                  HOME
-                </a>
+                <Link
+                  to="/#Header"
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
+                  MARIA
+                </Link>
               </li>
               <li>
-                <a className="nav-link" href="/projects">
+                <Link
+                  to="/#Projects"
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
                   PROJECTS
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link" href="/about">
+                <Link
+                  to="/#About"
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
                   ABOUT
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link" href="/contact">
+                <Link
+                  to="/#Contact"
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
                   CONTACT
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

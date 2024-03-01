@@ -7,15 +7,25 @@ import "./footer.css";
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" id="Contact">
         <article className="footer-container">
           <h1 className="footer-title">Let&apos;s Chat!</h1>
           <section className="form-container">
             <div className="form-info">
-              <input type="text" name="field1" placeholder="Your Name" />
-              <input type="email" name="field2" placeholder="Email" />
+              <input
+                className="name"
+                type="text"
+                name="field1"
+                placeholder="Your Name"
+              />
+              <input
+                className="email"
+                type="email"
+                name="field2"
+                placeholder="Email"
+              />
             </div>
-            <textarea placeholder="Message"></textarea>
+            <textarea className="message" placeholder="Message"></textarea>
             <button className="footer-button">SEND MESSAGE</button>
           </section>
         </article>
@@ -44,16 +54,17 @@ export default function Footer() {
                 <img src={email} alt="" />
               </a>
             </button>
-            <h2 className="footer-logo-title">
-              Designed and developed with ❤ by{" "}
-              <a
-                href="https://github.com/mvacjar/My-Porfolio"
-                rel="noopener noreferrer"
-              >
-                Mvacjar
-              </a>
-            </h2>
           </section>
+          <h2 className="footer-logo-title">
+            Designed and developed with ❤ by{" "}
+            <a
+              href="https://github.com/mvacjar/My-Porfolio"
+              rel="noopener noreferrer"
+              className="footer-logo-link"
+            >
+              mvacjar
+            </a>
+          </h2>
         </article>
       </footer>
     </>

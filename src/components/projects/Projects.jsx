@@ -4,7 +4,7 @@ import "./projects.css";
 export default function Projects() {
   return (
     <>
-      <div className="project-container">
+      <div className="project-container" id="Projects">
         <article className="project-wrapper">
           <div className="marquee-container">
             <div className="marquee-wrapper">
