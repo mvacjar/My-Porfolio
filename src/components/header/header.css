@@ -257,7 +257,7 @@
   }
 
   .main-name {
-    font-size: clamp(4rem, 5vw, 6rem);
+    font-size: clamp(3.9rem, 5vw, 6rem);
   }
 
   .main-profession {
