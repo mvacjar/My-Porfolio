@@ -1,7 +1,6 @@
 .about-container {
   background-image: url("../../assets/images/polygon_black2.svg");
   background-size: cover;
-  scroll-behavior: smooth;
 }
 
 /* --- About Me --- */

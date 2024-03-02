@@ -1,7 +1,6 @@
 .header-container {
   background-image: url("../../assets/images/background_azahar.png");
   background-size: cover;
-  scroll-behavior: smooth;
   transform: translateZ(-1px) scale(1);
   z-index: -1;
 }

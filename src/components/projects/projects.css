@@ -1,7 +1,6 @@
 .project-container {
   background-image: url("../../assets/images/polygon_black1.svg");
   background-size: cover;
-  scroll-behavior: smooth;
   min-height: 100vh;
 }
 
