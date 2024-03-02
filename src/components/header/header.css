@@ -1,8 +1,9 @@
-/* --- Nav Section --- */
 .header-container {
   background-image: url("../../assets/images/background_azahar.png");
   background-size: cover;
   scroll-behavior: smooth;
+  transform: translateZ(-1px) scale(1);
+  z-index: -1;
 }
 
 .black_wall {
@@ -10,34 +11,17 @@
   background-color: var(--color-black);
   max-width: 70%;
   filter: drop-shadow(5px 5px 20px var(--color-black));
-
-  /* animation: slideToLeft auto ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 150%; */
-
-  /* clip-path: polygon(
-    0 0,
-    calc(100% - 300px) 0,
-    calc(100% - 0px) 450px,
-    calc(100% - 300px) 100%,
-    0 100%
-  ); */
 }
 
-/* @keyframes slideToLeft {
-  0% {
-    translate: 100rem 0;
-  }
-  100% {
-    translate: 0% 0;
-  }
-} */
-
+/* --- Nav Section --- */
 .nav-container {
   display: flex;
   flex-direction: row;
   position: absolute;
+  top: 0;
   width: 100%;
+  z-index: 100;
+  background-color: var(--color-black);
 }
 
 .nav-logo {
@@ -65,15 +49,15 @@
   color: var(--color-orange);
   font-weight: 800;
   margin: 0 1rem;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease-out;
 }
 
-.nav-link:hover {
+.card-project-title:hover {
   transform: scale(1.1);
 }
 
-.nav-link:active {
-  transform: scale(1);
+.card-project-title:active {
+  transform: scale(0.9);
 }
 
 .nav-link:last-child {
@@ -85,6 +69,7 @@
 }
 
 /* --- Main --- */
+
 .main-container {
   display: flex;
   align-items: center;
@@ -124,32 +109,24 @@
 }
 
 .main-name {
+  position: relative;
   text-align: start;
   flex-wrap: wrap;
-  background-image: url("../../assets/images/background_azahar.png");
   background-size: cover;
   background-clip: text;
-  font-size: clamp(1.5rem, 10vw, 10rem);
+  font-size: clamp(2rem, 11vw, 10rem);
   color: transparent;
-}
-
-.main-profession {
-  font-size: clamp(0.5rem, 2.5vw, 3rem);
-  color: var(--color-white);
-  margin-bottom: 3rem;
-  letter-spacing: 0.1em;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-
-  animation: type 5s steps(44) 1s infinite, blink 0.5s steps(1) infinite;
+  background-image: url("../../assets/images/background_azahar.png");
 }
 
 @keyframes type {
-  to {
+  0% {
+    width: 0;
+  }
+  73% {
+    width: 26ch;
+  }
+  100% {
     width: 26ch;
   }
 }
@@ -164,6 +141,21 @@
   to {
     border-color: transparent;
   }
+}
+
+.main-profession {
+  font-size: clamp(0.5rem, 2.5vw, 3rem);
+  color: var(--color-white);
+  margin-bottom: 3rem;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: type 6s steps(44) 1s infinite, blink 0.5s steps(1) infinite;
 }
 
 .main-container-button {
@@ -190,7 +182,8 @@
 .main-button:active {
   transform: scale(1);
 }
-/* --- Arrow --- */
+
+/* --- Arrow Scroll Down --- */
 
 .arrow-container {
   position: absolute;
@@ -214,7 +207,4 @@
 
 .arrow-img {
   width: 2.5rem;
-  transition: transform 0.5s ease;
 }
-
-/* --- Reset --- */

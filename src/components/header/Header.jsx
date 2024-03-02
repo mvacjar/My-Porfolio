@@ -2,6 +2,7 @@ import nav_logo from "../../assets/images/nav_logo.jpeg";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
+import cv from "../../assets/images/cv.png";
 import arrow from "../../assets/images/arrow_down.png";
 import "../../../index.css";
 import "./header.css";
@@ -52,7 +53,7 @@ export default function Header() {
                   ABOUT
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/#Contact"
                   smooth={true}
@@ -61,7 +62,7 @@ export default function Header() {
                 >
                   CONTACT
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <main>
@@ -88,6 +89,16 @@ export default function Header() {
                 <button className="main-logo">
                   <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
                     <img src={email} alt="" />
+                  </a>
+                </button>
+                <button className="main-logo">
+                  <a
+                    href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={cv} alt="curriculum" />
                   </a>
                 </button>
               </section>
