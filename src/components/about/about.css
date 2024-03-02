@@ -1,0 +1,99 @@
+.about-container {
+  background-image: url("../../assets/images/polygon_black2.svg");
+  background-size: cover;
+  scroll-behavior: smooth;
+  /* min-height: 100vh; */
+}
+
+/* --- About Me --- */
+
+.marquee-footer-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  padding-top: 3rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: inline-block;
+  transform: translateZ(0);
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-footer-title {
+  font-size: clamp(1.5rem, 9vw, 10rem);
+  color: var(--color-black);
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  background-color: var(--color-creme);
+}
+
+/* --- Card Section --- */
+.card-section {
+  color: var(--color-creme);
+}
+
+.words-animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 93vh;
+  font-size: clamp(1.5rem, 7vw, 4rem);
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.word-left {
+  animation: fadeRight 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 180%;
+  transition: transform 0.5s ease;
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.word-right {
+  animation: fadeLeft 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 180%;
+  transition: transform 0.5s ease;
+}
+
+.bigger {
+  font-size: clamp(1.5rem, 10vw, 7rem);
+  text-align: center;
+}
