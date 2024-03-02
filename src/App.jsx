@@ -1,4 +1,5 @@
 import Header from "./components/header/Header";
+import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <ArrowUp />
         <Header />
+        <Skills />
         <Projects />
         <About />
         <Footer />

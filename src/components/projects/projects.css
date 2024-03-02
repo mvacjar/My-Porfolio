@@ -31,7 +31,7 @@
 }
 
 .marquee-title {
-  font-size: clamp(1.5rem, 9vw, 10rem);
+  font-size: clamp(1.5rem, 9vw, 5rem);
   color: var(--color-black);
   background-color: var(--color-creme);
   padding: 1rem 3rem;
