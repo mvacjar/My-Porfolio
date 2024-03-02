@@ -253,7 +253,7 @@
 
   .main-logo {
     width: 2rem;
-    margin: 0rem 1rem 1rem;
+    margin: 0rem 0.8rem 1rem;
   }
 
   .main-name {
@@ -261,7 +261,7 @@
   }
 
   .main-profession {
-    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
   }
 
   .main-button {
