@@ -23,42 +23,32 @@ export default function Header() {
               <img src={nav_logo} className="nav-logo" alt="Profile picture" />
             </figure>
             <ul className="nav-links">
-              <li>
-                <Link
-                  to="/#Header"
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
-                  MARIA
-                </Link>
-              </li>
-              <li>
+              <li className="nav-link">
                 <Link
                   to="/#Projects"
                   smooth={true}
                   duration={500}
-                  className="nav-link"
+                  className="link"
                 >
                   PROJECTS
                 </Link>
               </li>
-              <li>
+              <li className="nav-link">
                 <Link
                   to="/#About"
                   smooth={true}
                   duration={500}
-                  className="nav-link"
+                  className="link"
                 >
-                  ABOUT
+                  ABOUT ME
                 </Link>
               </li>
-              {/* <li>
+              {/* <li className="nav-link">
                 <Link
                   to="/#Contact"
                   smooth={true}
                   duration={500}
-                  className="nav-link"
+                  className="link"
                 >
                   CONTACT
                 </Link>
@@ -83,12 +73,12 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={linkedIn} alt="" />
+                    <img src={linkedIn} alt="linkedin" />
                   </a>
                 </button>
                 <button className="main-logo">
                   <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
-                    <img src={email} alt="" />
+                    <img src={email} alt="gmail" />
                   </a>
                 </button>
                 <button className="main-logo">

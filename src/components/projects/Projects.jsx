@@ -35,31 +35,35 @@ export default function Projects() {
                 </a>
               </h2>
               <figure className="card-image-container">
-                <img src={hinder} className="card-image" alt="Mockup" />
+                <a href="https://hinder-hyperisland.netlify.app/">
+                  <img src={hinder} className="card-image" alt="Mockup" />
+                </a>
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
                   Hinder App is an App to know people inside Hyper Island
                   Academy. It has been used React and Tailwind to make it.
                 </span>
-                <button className="main-logo">
-                  <a
-                    href="https://github.com/mvacjar/Hinder-App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={github} alt="github" />
-                  </a>
-                </button>
-                <button className="main-logo">
-                  <a
-                    href="https://hinder-hyperisland.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={website} alt="github" />
-                  </a>
-                </button>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/Hinder-App"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://hinder-hyperisland.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="github" />
+                    </a>
+                  </button>
+                </div>
               </div>
             </section>
             <section className="card-project-item">
@@ -70,35 +74,39 @@ export default function Projects() {
                   href="https://peach-weather-app.netlify.app/"
                   target="_blank"
                 >
-                  Weather App{" "}
+                  Weather App
                 </a>
               </h2>
               <figure className="card-image-container">
-                <img src={weather} className="card-image" alt="Mockup" />
+                <a href="https://peach-weather-app.netlify.app/">
+                  <img src={weather} className="card-image" alt="Mockup" />
+                </a>
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
                   With this weather app, you can check the weather in any city.
                   It has been used React, JS, and CSS to make it.
                 </span>
-                <button className="main-logo">
-                  <a
-                    href="https://github.com/mvacjar/react-weather-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={github} alt="github" />
-                  </a>
-                </button>
-                <button className="main-logo">
-                  <a
-                    href="https://peach-weather-app.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={website} alt="github" />
-                  </a>
-                </button>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/react-weather-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://peach-weather-app.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="github" />
+                    </a>
+                  </button>
+                </div>
               </div>
             </section>
             <section className="card-project-item">
@@ -112,7 +120,9 @@ export default function Projects() {
                 </a>
               </h2>
               <figure className="card-image-container">
-                <img src={amazonSnake} className="card-image" alt="Mockup" />
+                <a href="https://amazon-snake.netlify.app/">
+                  <img src={amazonSnake} className="card-image" alt="Mockup" />
+                </a>
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
@@ -120,24 +130,26 @@ export default function Projects() {
                   browser but with new features! Try it! It has been used HTML,
                   JS, and CSS to deliver it.
                 </span>
-                <button className="main-logo">
-                  <a
-                    href="https://github.com/mvacjar/amazons-snake"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={github} alt="github" />
-                  </a>
-                </button>
-                <button className="main-logo">
-                  <a
-                    href="https://amazon-snake.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={website} alt="github" />
-                  </a>
-                </button>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/amazons-snake"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://amazon-snake.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="github" />
+                    </a>
+                  </button>
+                </div>
               </div>
             </section>
             <section className="card-project-item">
@@ -151,7 +163,9 @@ export default function Projects() {
                 </a>
               </h2>
               <figure className="card-image-container">
-                <img src={plants} className="card-image" alt="Mockup" />
+                <a href="https://luxurydesigninteriors.netlify.app/">
+                  <img src={plants} className="card-image" alt="Mockup" />
+                </a>
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
@@ -159,24 +173,26 @@ export default function Projects() {
                   JS, HMTL and CSS to make it. All with the purpose to learn
                   more about SEO.
                 </span>
-                <button className="main-logo">
-                  <a
-                    href="https://github.com/mvacjar/Design-Web-SEO"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={github} alt="github" />
-                  </a>
-                </button>
-                <button className="main-logo">
-                  <a
-                    href="https://luxurydesigninteriors.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={website} alt="github" />
-                  </a>
-                </button>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/Design-Web-SEO"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://luxurydesigninteriors.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="github" />
+                    </a>
+                  </button>
+                </div>
               </div>
             </section>
           </div>

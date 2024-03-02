@@ -1,6 +1,7 @@
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
+import cv from "../../assets/images/cv.png";
 import "./../../../index.css";
 import "./footer.css";
 
@@ -53,6 +54,16 @@ export default function Footer() {
               <button className="footer-logo">
                 <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
                   <img src={email} alt="" />
+                </a>
+              </button>
+              <button className="footer-logo">
+                <a
+                  href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={cv} alt="curriculum" />
                 </a>
               </button>
             </section>

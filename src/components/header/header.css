@@ -44,12 +44,32 @@
   justify-content: space-evenly;
 }
 
+.link {
+  color: var(--color-orange);
+}
+
+.link:hover {
+  color: var(--color-creme);
+}
+
 .nav-link {
   font-size: clamp(1rem, 2vw, 3rem);
   color: var(--color-orange);
   font-weight: 800;
   margin: 0 1rem;
-  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover {
+  transition: transform 0.1s ease-out;
+  transform: scale(1.2);
+}
+
+.nav-link:active {
+  transform: scale(1);
+}
+
+.nav-link:active {
+  color: none;
 }
 
 .card-project-title:hover {
@@ -60,21 +80,13 @@
   transform: scale(0.9);
 }
 
-.nav-link:last-child {
-  margin-right: 1rem;
-}
-
-.nav-link:active {
-  color: none;
-}
-
 /* --- Main --- */
 
 .main-container {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 13rem 0rem 0rem 1rem;
+  padding: 10rem 0rem 0rem 1rem;
 }
 
 .main-logos {
@@ -198,6 +210,22 @@
   z-index: 1;
 }
 
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow-container:hover {
+  animation: moveDown 1s ease-out infinite;
+}
+
 .arrow-text {
   color: var(--color-creme);
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
@@ -207,4 +235,36 @@
 
 .arrow-img {
   width: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    min-height: 100vh;
+  }
+
+  .black_wall {
+    max-width: 100%;
+    min-height: 65vh;
+  }
+
+  .main-container {
+    padding: 12rem 0rem 0rem 1rem;
+  }
+
+  .main-logo {
+    width: 2rem;
+    margin: 0rem 0rem 1rem 1.5rem;
+  }
+
+  .main-name {
+    font-size: clamp(4rem, 5vw, 6rem);
+  }
+
+  .main-profession {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+
+  .main-button {
+    font-size: clamp(0.7rem, 4vw, 1rem);
+  }
 }

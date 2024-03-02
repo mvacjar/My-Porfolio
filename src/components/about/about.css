@@ -2,7 +2,6 @@
   background-image: url("../../assets/images/polygon_black2.svg");
   background-size: cover;
   scroll-behavior: smooth;
-  /* min-height: 100vh; */
 }
 
 /* --- About Me --- */
@@ -96,4 +95,10 @@
 .bigger {
   font-size: clamp(1.5rem, 10vw, 7rem);
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .words-animation {
+    min-height: 84vh;
+  }
 }

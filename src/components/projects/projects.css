@@ -104,7 +104,10 @@
 }
 
 .card-image {
+  width: 100%;
   max-width: 35rem;
+  height: auto;
+  cursor: pointer;
 }
 
 .description-container {
@@ -120,4 +123,45 @@
   color: var(--color-creme);
   width: 20rem;
   font-size: clamp(1rem, 1vw, 3rem);
+}
+
+@media screen and (max-width: 500px) {
+  /* --- Card Projects --- */
+  .card-project-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .card-project-item {
+    padding-bottom: 1rem;
+    max-width: 100%;
+  }
+  .card-project-title {
+    font-size: clamp(2rem, 4vw, 5rem);
+  }
+
+  .card-image-container {
+    max-width: 100%;
+  }
+
+  .description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-project-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-logos-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-right: 3rem;
+  }
 }
