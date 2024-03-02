@@ -244,12 +244,11 @@
 
   .black_wall {
     max-width: 100%;
-    min-height: 80vh;
-    padding-bottom: 1rem;
+    min-height: 75vh;
   }
 
   .main-container {
-    padding: 12rem 0rem 0rem 1rem;
+    padding: 10rem 0rem 0rem 1rem;
   }
 
   .main-title {
