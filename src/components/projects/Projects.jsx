@@ -16,8 +16,12 @@ export default function Projects() {
             <div className="marquee-wrapper">
               <h1 className="marquee-title">PROJECTS</h1>
               <h1 className="marquee-title">PROJECTS</h1>
+              <h1 className="marquee-title">PROJECTS</h1>
+              <h1 className="marquee-title">PROJECTS</h1>
             </div>
             <div className="marquee-wrapper">
+              <h1 className="marquee-title">PROJECTS</h1>
+              <h1 className="marquee-title">PROJECTS</h1>
               <h1 className="marquee-title">PROJECTS</h1>
               <h1 className="marquee-title">PROJECTS</h1>
             </div>

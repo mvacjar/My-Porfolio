@@ -10,8 +10,10 @@ export default function About() {
             <div className="marquee-container">
               <div className="marquee-footer-wrapper">
                 <h1 className="marquee-footer-title">SO, WHAT ABOUT ME?</h1>
+                <h1 className="marquee-footer-title">SO, WHAT ABOUT ME?</h1>
               </div>
               <div className="marquee-footer-wrapper">
+                <h1 className="marquee-footer-title">SO, WHAT ABOUT ME?</h1>
                 <h1 className="marquee-footer-title">SO, WHAT ABOUT ME?</h1>
               </div>
             </div>
