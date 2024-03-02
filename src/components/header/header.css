@@ -262,6 +262,7 @@
 
   .main-profession {
     font-size: clamp(0.9rem, 1vw, 1.5rem);
+    margin-bottom: 1rem;
   }
 
   .main-button {
