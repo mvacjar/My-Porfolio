@@ -245,10 +245,15 @@
   .black_wall {
     max-width: 100%;
     min-height: 80vh;
+    padding-bottom: 1rem;
   }
 
   .main-container {
     padding: 12rem 0rem 0rem 1rem;
+  }
+
+  .main-title {
+    margin-left: 1rem;
   }
 
   .main-logo {
