@@ -94,6 +94,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .main-logo {
@@ -253,6 +254,10 @@
 
   .main-title {
     margin-left: 1rem;
+  }
+
+  .main-logos {
+    margin-bottom: 5rem;
   }
 
   .main-logo {
