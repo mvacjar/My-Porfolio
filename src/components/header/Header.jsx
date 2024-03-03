@@ -15,12 +15,22 @@ export default function Header() {
       <div className="header-container" id="Header">
         <div className="arrow-container">
           <p className="arrow-text">SCROLL</p>
-          <img className="arrow-img" src={arrow} alt="arrow down" />
+          <img
+            className="arrow-img"
+            src={arrow}
+            alt="arrow down"
+            loading="lazy"
+          />
         </div>
         <div className="black_wall">
           <nav className="nav-container">
             <figure className="nav-logo">
-              <img src={nav_logo} className="nav-logo" alt="Profile picture" />
+              <img
+                src={nav_logo}
+                className="nav-logo"
+                alt="Profile picture"
+                loading="lazy"
+              />
             </figure>
             <ul className="nav-links">
               <li className="nav-link">
@@ -64,7 +74,7 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={github} alt="github" />
+                    <img src={github} alt="github" loading="lazy" />
                   </a>
                 </button>
                 <button className="main-logo">
@@ -73,7 +83,7 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={linkedIn} alt="linkedin" />
+                    <img src={linkedIn} alt="linkedin" loading="lazy" />
                   </a>
                 </button>
                 <button className="main-logo">

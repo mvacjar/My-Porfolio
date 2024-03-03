@@ -40,7 +40,12 @@ export default function Projects() {
               </h2>
               <figure className="card-image-container">
                 <a href="https://hinder-hyperisland.netlify.app/">
-                  <img src={hinder} className="card-image" alt="Mockup" />
+                  <img
+                    src={hinder}
+                    className="card-image"
+                    alt="Mockup"
+                    loading="lazy"
+                  />
                 </a>
               </figure>
               <div className="description-container">
@@ -55,7 +60,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={github} alt="github" />
+                      <img src={github} alt="github" loading="lazy" />
                     </a>
                   </button>
                   <button className="main-logo">
@@ -64,7 +69,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={website} alt="github" />
+                      <img src={website} alt="website" loading="lazy" />
                     </a>
                   </button>
                 </div>
@@ -83,7 +88,12 @@ export default function Projects() {
               </h2>
               <figure className="card-image-container">
                 <a href="https://peach-weather-app.netlify.app/">
-                  <img src={weather} className="card-image" alt="Mockup" />
+                  <img
+                    src={weather}
+                    className="card-image"
+                    alt="Mockup"
+                    loading="lazy"
+                  />
                 </a>
               </figure>
               <div className="description-container">
@@ -98,7 +108,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={github} alt="github" />
+                      <img src={github} alt="github" loading="lazy" />
                     </a>
                   </button>
                   <button className="main-logo">
@@ -107,7 +117,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={website} alt="github" />
+                      <img src={website} alt="website" loading="lazy" />
                     </a>
                   </button>
                 </div>
@@ -140,7 +150,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={github} alt="github" />
+                      <img src={github} alt="github" loading="lazy" />
                     </a>
                   </button>
                   <button className="main-logo">
@@ -149,7 +159,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={website} alt="github" />
+                      <img src={website} alt="github" loading="lazy" />
                     </a>
                   </button>
                 </div>
@@ -167,7 +177,12 @@ export default function Projects() {
               </h2>
               <figure className="card-image-container">
                 <a href="https://luxurydesigninteriors.netlify.app/">
-                  <img src={plants} className="card-image" alt="Mockup" />
+                  <img
+                    src={plants}
+                    className="card-image"
+                    alt="Mockup"
+                    loading="lazy"
+                  />
                 </a>
               </figure>
               <div className="description-container">
@@ -183,7 +198,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={github} alt="github" />
+                      <img src={github} alt="github" loading="lazy" />
                     </a>
                   </button>
                   <button className="main-logo">
@@ -192,7 +207,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={website} alt="github" />
+                      <img src={website} alt="website" loading="lazy" />
                     </a>
                   </button>
                 </div>

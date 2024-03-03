@@ -8,7 +8,12 @@ export default function ArrowUp() {
     <>
       <figure>
         <Link to="/#Header" smooth={true} duration={500}>
-          <img className="arrow-up" src={arrowUp} alt="arrow scroll up"></img>
+          <img
+            className="arrow-up"
+            src={arrowUp}
+            alt="arrow scroll up"
+            loading="lazy"
+          ></img>
         </Link>
       </figure>
     </>

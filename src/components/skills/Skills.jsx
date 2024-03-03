@@ -26,31 +26,66 @@ export default function Skills() {
         <section className="skills-section-container">
           <div className="skills-section-wrapper">
             <div className="skills-div">
-              <img className="skills-img" src={react} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={react}
+                alt="react icon"
+                loading="lazy"
+              />
               <p className="skills-text">REACT</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={js} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={js}
+                alt="js icon"
+                loading="lazy"
+              />
               <p className="skills-text">JS</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={html} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={html}
+                alt="html icon"
+                loading="lazy"
+              />
               <p className="skills-text">HTML</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={css} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={css}
+                alt="css icon"
+                loading="lazy"
+              />
               <p className="skills-text">CSS</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={seo} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={seo}
+                alt="SEO icon"
+                loading="lazy"
+              />
               <p className="skills-text">SEO</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={github} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={github}
+                alt=" gihut icon"
+                loading="lazy"
+              />
               <p className="skills-text">GITHUB</p>
             </div>
             <div className="skills-div">
-              <img className="skills-img" src={wip} alt="arrow down" />
+              <img
+                className="skills-img"
+                src={wip}
+                alt="work in progress icon"
+                loading="lazy"
+              />
               <p className="skills-text">WORK IN PROGRESS</p>
             </div>
           </div>

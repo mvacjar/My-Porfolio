@@ -39,7 +39,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={github} alt="github" />
+                  <img src={github} alt="github logo" loading="lazy" />
                 </a>
               </button>
               <button className="footer-logo">
@@ -48,12 +48,12 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linkedIn} alt="" />
+                  <img src={linkedIn} alt="linkedin logo" loading="lazy" />
                 </a>
               </button>
               <button className="footer-logo">
                 <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
-                  <img src={email} alt="" />
+                  <img src={email} alt="email logo" loading="lazy" />
                 </a>
               </button>
               <button className="footer-logo">
@@ -63,7 +63,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={cv} alt="curriculum" />
+                  <img src={cv} alt="curriculum logo" loading="lazy" />
                 </a>
               </button>
             </section>
