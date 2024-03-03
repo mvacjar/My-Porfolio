@@ -23,7 +23,7 @@ export default function About() {
                   <p className="word-left bigger">FRONTEND DEVELOPER 👩‍💻</p>
                   <p className="word-right">Creative Thinker</p>
                   <p className="word-left">PASSION#</p>
-                  <p className="word-right">Self-teach</p>
+                  <p className="word-right">Commitment</p>
                   <p className="word-left bigger">💪 NEW CHALLENGES</p>
                   <p className="word-right">Communicative</p>
                   <p className="word-left">TEAM PLAYER</p>
