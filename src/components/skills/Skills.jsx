@@ -86,7 +86,7 @@ export default function Skills() {
                 alt="work in progress icon"
                 loading="lazy"
               />
-              <p className="skills-text">WORK IN PROGRESS</p>
+              <p className="skills-text">AND MORE</p>
             </div>
           </div>
         </section>
