@@ -2,6 +2,10 @@ import react from "../../assets/images/react.svg";
 import html from "../../assets/images/html5.png";
 import css from "../../assets/images/css3.png";
 import js from "../../assets/images/js.png";
+import nodejs from "../../assets/images/nodejs.png";
+import bootstrap from "../../assets/images/bootstrap.png";
+import tailwind from "../../assets/images/tailwind1.png";
+import ps from "../../assets/images/ps.png";
 import seo from "../../assets/images/seo.png";
 import github from "../../assets/images/github.png";
 import wip from "../../assets/images/wip.png";
@@ -64,6 +68,33 @@ export default function Skills() {
             <div className="skills-div">
               <img
                 className="skills-img"
+                src={nodejs}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">NODEJS</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={bootstrap}
+                alt="boostrap icon"
+                loading="lazy"
+              />
+              <p className="skills-text">BOOTSTRAP</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={tailwind}
+                alt="tailwind icon"
+                loading="lazy"
+              />
+              <p className="skills-text">TAILWIND</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
                 src={seo}
                 alt="SEO icon"
                 loading="lazy"
@@ -74,10 +105,19 @@ export default function Skills() {
               <img
                 className="skills-img"
                 src={github}
-                alt=" gihut icon"
+                alt="github icon"
                 loading="lazy"
               />
               <p className="skills-text">GITHUB</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={ps}
+                alt="photoshop icon"
+                loading="lazy"
+              />
+              <p className="skills-text">PHOTOSHOP</p>
             </div>
             <div className="skills-div">
               <img
