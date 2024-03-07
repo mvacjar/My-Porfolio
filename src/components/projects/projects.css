@@ -27,7 +27,7 @@
   flex-direction: row;
   position: inline-block;
   transform: translateZ(0);
-  animation: marquee 30s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
 .marquee-title {

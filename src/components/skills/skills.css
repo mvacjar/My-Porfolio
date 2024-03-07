@@ -47,25 +47,12 @@
   padding: 2rem 4rem;
 }
 
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .skills-div {
   max-width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: heartbeat 1s infinite;
 }
 
 .skills-img {
