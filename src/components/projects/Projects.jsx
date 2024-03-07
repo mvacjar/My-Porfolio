@@ -50,8 +50,9 @@ export default function Projects() {
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
-                  Hinder is an app to meet people inside at Hyper Island. It has
-                  been develop using React and Tailwind to make it.
+                  Hinder is a social media platform designed to foster
+                  connections among students at Hyper Island. The aim of this
+                  project was to learn more and to practice React and Tailwind.
                 </span>
                 <div className="main-logos-container">
                   <button className="main-logo">
@@ -98,8 +99,10 @@ export default function Projects() {
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
-                  With this weather app, you can check the weather any city. It
-                  has been develop using React, JS, and CSS.
+                  With this weather app, you can check your actual weather by
+                  geolocation and any city you like to travel. The aim of this
+                  project was to learn more about and to practice React, JS, and
+                  CSS.
                 </span>
                 <div className="main-logos-container">
                   <button className="main-logo">
@@ -140,8 +143,10 @@ export default function Projects() {
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
-                  Amazon&apos;s Snake is the clasic but now with new features!
-                  It has been develop using HTML, JS, and CSS.
+                  Amazon&apos;s Snake is the clasic game but now with new
+                  features! A bomb and 4 different speeds. Check it out!. The
+                  aim of this project was to learn more about and to practice
+                  HTML, JS, and CSS.
                 </span>
                 <div className="main-logos-container">
                   <button className="main-logo">
@@ -187,9 +192,9 @@ export default function Projects() {
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
-                  Luxury Designs is a website to desing your spaces with plants.
-                  It has been develop using JS, HMTL and CSS. The aim of this
-                  project was to learn more about SEO.
+                  Luxury Designs is a website that helps you design your spaces
+                  with plants. The tools used for this project were JS, HTML,
+                  and CSS. The project aimed to learn more about SEO.
                 </span>
                 <div className="main-logos-container">
                   <button className="main-logo">
