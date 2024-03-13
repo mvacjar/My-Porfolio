@@ -9,6 +9,9 @@ import ps from "../../assets/images/ps.png";
 import seo from "../../assets/images/seo.png";
 import github from "../../assets/images/github.png";
 import wip from "../../assets/images/wip.png";
+import sql from "../../assets/images/sql.png";
+import postman from "../../assets/images/postman.svg";
+import psql from "../../assets/images/psql.png";
 
 import "./../../../index.css";
 import "./skills.css";
@@ -73,6 +76,33 @@ export default function Skills() {
                 loading="lazy"
               />
               <p className="skills-text">NODEJS</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={sql}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">SQL</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={psql}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">POSTGRESQL</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={postman}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">POSTMAN</p>
             </div>
             <div className="skills-div">
               <img
