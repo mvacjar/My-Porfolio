@@ -6,6 +6,9 @@ import nodejs from "../../assets/images/nodejs.png";
 import bootstrap from "../../assets/images/bootstrap.png";
 import tailwind from "../../assets/images/tailwind1.png";
 import ps from "../../assets/images/ps.png";
+import ai from "../../assets/images/ai.png";
+import next from "../../assets/images/next.png";
+import trello from "../../assets/images/trello.png";
 import seo from "../../assets/images/seo.png";
 import github from "../../assets/images/github.png";
 import wip from "../../assets/images/wip.png";
@@ -48,7 +51,7 @@ export default function Skills() {
                 alt="js icon"
                 loading="lazy"
               />
-              <p className="skills-text">JS</p>
+              <p className="skills-text">JAVASCRIPT</p>
             </div>
             <div className="skills-div">
               <img
@@ -71,11 +74,20 @@ export default function Skills() {
             <div className="skills-div">
               <img
                 className="skills-img"
+                src={next}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">NEXT</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
                 src={nodejs}
                 alt="nodejs icon"
                 loading="lazy"
               />
-              <p className="skills-text">NODEJS</p>
+              <p className="skills-text">NODE</p>
             </div>
             <div className="skills-div">
               <img
@@ -143,12 +155,31 @@ export default function Skills() {
             <div className="skills-div">
               <img
                 className="skills-img"
+                src={trello}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">TRELLO</p>
+            </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
                 src={ps}
                 alt="photoshop icon"
                 loading="lazy"
               />
               <p className="skills-text">PHOTOSHOP</p>
             </div>
+            <div className="skills-div">
+              <img
+                className="skills-img"
+                src={ai}
+                alt="nodejs icon"
+                loading="lazy"
+              />
+              <p className="skills-text">ILLUSTRATOR</p>
+            </div>
+
             <div className="skills-div">
               <img
                 className="skills-img"

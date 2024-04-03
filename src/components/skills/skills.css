@@ -64,6 +64,7 @@
   color: var(--color-creme);
   text-align: center;
   margin: 1rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 500px) {
