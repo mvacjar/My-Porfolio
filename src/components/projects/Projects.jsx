@@ -4,6 +4,7 @@ import weather from "../../assets/images/weather.png";
 import plants from "../../assets/images/plants.png";
 import github from "../../assets/images/github.png";
 import website from "../../assets/images/website.png";
+import fullstack from "../../assets/images/fullstack.png";
 import "./../../../index.css";
 import "./projects.css";
 
@@ -28,6 +29,55 @@ export default function Projects() {
           </div>
 
           <div className="card-project-container">
+            <section className="card-project-item">
+              <h2 className="card-project-title">
+                <a
+                  className="title-link"
+                  href="https://todolist-backend-xi.vercel.app/"
+                  target="_blank"
+                >
+                  ToDo List FullStack
+                </a>
+              </h2>
+              <figure className="card-image-container">
+                <a href="https://github.com/mvacjar/ToDoFullstack">
+                  <img
+                    src={fullstack}
+                    className="card-image"
+                    alt="Mockup"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div className="description-container">
+                <span className="card-project-description">
+                  This is a full-stack project where you can create, update and
+                  deleted tasks in a cyberpunk style. The aim of this project
+                  was to learn more about and to practice React, Node.js,
+                  Express, and PostgreSQL.
+                </span>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/ToDoFullstack"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" loading="lazy" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://todolist-backend-xi.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="website" loading="lazy" />
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </section>
             <section className="card-project-item">
               <h2 className="card-project-title">
                 <a
@@ -165,54 +215,6 @@ export default function Projects() {
                       rel="noopener noreferrer"
                     >
                       <img src={website} alt="github" loading="lazy" />
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </section>
-            <section className="card-project-item">
-              <h2 className="card-project-title">
-                <a
-                  className="title-link"
-                  href="https://luxurydesigninteriors.netlify.app/"
-                  target="_blank"
-                >
-                  Luxury Designs
-                </a>
-              </h2>
-              <figure className="card-image-container">
-                <a href="https://luxurydesigninteriors.netlify.app/">
-                  <img
-                    src={plants}
-                    className="card-image"
-                    alt="Mockup"
-                    loading="lazy"
-                  />
-                </a>
-              </figure>
-              <div className="description-container">
-                <span className="card-project-description">
-                  Luxury Designs is a website that helps you design your spaces
-                  with plants. The tools used for this project were JS, HTML,
-                  and CSS. The project aimed to learn more about SEO.
-                </span>
-                <div className="main-logos-container">
-                  <button className="main-logo">
-                    <a
-                      href="https://github.com/mvacjar/Design-Web-SEO"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={github} alt="github" loading="lazy" />
-                    </a>
-                  </button>
-                  <button className="main-logo">
-                    <a
-                      href="https://luxurydesigninteriors.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={website} alt="website" loading="lazy" />
                     </a>
                   </button>
                 </div>
