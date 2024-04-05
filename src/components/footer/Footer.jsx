@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
@@ -6,30 +8,74 @@ import "./../../../index.css";
 import "./footer.css";
 
 export default function Footer() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault(e);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message Sent!");
+        },
+        (error) => {
+          console.log("Message Not Sent!", error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <footer className="footer" id="Contact">
-        {/* <article className="footer-container">
-          <h1 className="footer-title">Let&apos;s Chat!</h1>
+        <form className="chat-container" ref={form} onSubmit={sendEmail}>
+          <h1 className="chat-title">Let&apos;s Chat!</h1>
           <section className="form-container">
             <div className="form-info">
               <input
+                required
                 className="name"
                 type="text"
-                name="field1"
+                name="user_name"
                 placeholder="Your Name"
               />
               <input
+                required
                 className="email"
                 type="email"
-                name="field2"
+                name="user_email"
                 placeholder="Email"
               />
             </div>
-            <textarea className="message" placeholder="Message"></textarea>
-            <button className="footer-button">SEND MESSAGE</button>
+            <input
+              required
+              className="subject"
+              type="text"
+              name="subject"
+              placeholder="Email Subject"
+            />
+            <textarea
+              required
+              className="message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              className="footer-button"
+            />
           </section>
-        </article> */}
+        </form>
         <article className="footer-logos-container">
           <section className="footer-wrapper">
             <section className="logos">
@@ -73,6 +119,7 @@ export default function Footer() {
                 <a
                   href="https://github.com/mvacjar/My-Porfolio"
                   rel="noopener noreferrer"
+                  target_blank="true"
                   className="footer-logo-link"
                 >
                   mvacjar

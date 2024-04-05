@@ -1,14 +1,16 @@
 .footer {
   position: relative;
-  min-height: 30vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-image: url("../../assets/images/background_azahar.png");
+  background-size: cover;
 }
 
-.footer::before {
+/* .footer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -17,8 +19,92 @@
   height: 100%;
   background-image: url("../../assets/images/background_azahar.png");
   background-size: cover;
-  filter: brightness(50%);
   z-index: -1;
+} */
+
+/* --- Let's Chat --- */
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 40rem;
+  padding: 3rem;
+  margin: 3rem;
+  text-align: center;
+  background-color: var(--color-white);
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.chat-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: clamp(1.5rem, 4vw, 5rem);
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.name,
+.email,
+.subject {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid var(--color-orange);
+  background: transparent;
+  outline: none;
+}
+
+.name {
+  margin-right: 2rem;
+}
+
+.subject {
+  margin-bottom: 2rem;
+}
+
+.message {
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--color-orange);
+  background: transparent;
+}
+
+.footer-button {
+  border: none;
+  border-radius: 15px;
+  padding: 0.3rem 4rem;
+  max-width: auto;
+  font-weight: 800;
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+  background-color: var(--color-orange);
+  transition: transform 0.1s ease;
+}
+
+.footer-button:hover {
+  transform: scale(1.1);
+}
+
+.footer-button:active {
+  transform: scale(1);
 }
 
 /* --- Footer Logos --- */
@@ -27,13 +113,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   width: 100%;
 }
 
 .footer-wrapper {
-  bottom: 0;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,110 +153,14 @@
   color: var(--color-orange);
 }
 
+.footer-logo-link:hover {
+  color: var(--color-creme);
+  transform: scale(0.95);
+}
+
 @media screen and (max-width: 500px) {
   .footer-logo {
-    width: 2.5rem;
+    width: 2rem;
     margin: 0rem 1.5rem 1.5rem;
   }
 }
-
-/* --- Let's Chat --- */
-
-/* .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 50rem;
-  padding: 3rem;
-  margin: 6rem;
-  text-align: center;
-  background-color: var(--color-white);
-  border-radius: 24px;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(0.9);
-  }
-  25% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-.footer-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: clamp(1.5rem, 4vw, 5rem);
-  color: var(--color-black);
-  margin-bottom: 2rem;
-  animation: heartbeat 1s infinite;
-}
-
-.form-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.name,
-.email {
-  display: block;
-  width: 100%;
-  height: 3rem;
-  border: none;
-  border-bottom: 1px solid var(--color-orange);
-  background: transparent;
-  outline: none;
-}
-
-.name {
-  margin-right: 2rem;
-}
-
-.message {
-  margin-bottom: 2rem;
-  display: block;
-  width: 100%;
-  height: 2rem;
-  margin-bottom: 2rem;
-  border: none;
-  border-bottom: 1px solid var(--color-orange);
-  background: transparent;
-  resize: none;
-  overflow: hidden;
-  outline: none;
-}
-
-.footer-button {
-  border: none;
-  border-radius: 15px;
-  padding: 0.3rem 4rem;
-  max-width: auto;
-  font-weight: 800;
-  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
-  background-color: var(--color-orange);
-  transition: transform 0.1s ease;
-}
-
-.footer-button:hover {
-  transform: scale(1.1);
-}
-
-.footer-button:active {
-  transform: scale(1);
-} */
