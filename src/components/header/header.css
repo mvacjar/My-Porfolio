@@ -60,11 +60,11 @@
 
 .nav-link:hover {
   transition: transform 0.1s ease-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .nav-link:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 .nav-link:active {
@@ -76,7 +76,7 @@
 }
 
 .card-project-title:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 /* --- Main --- */
@@ -109,7 +109,7 @@
 }
 
 .main-logo:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 .main-title {
@@ -192,7 +192,7 @@
 }
 
 .main-button:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 /* --- Arrow Scroll Down --- */

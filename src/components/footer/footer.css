@@ -92,7 +92,7 @@
 }
 
 .footer-button:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 /* --- Footer Logos --- */
@@ -128,7 +128,7 @@
 }
 
 .footer-logo:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 .footer-link-title {

@@ -72,7 +72,7 @@
 }
 
 .card-project-item:active {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 .card-project-title {
@@ -87,7 +87,7 @@
 }
 
 .card-project-title:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .card-image-container {
