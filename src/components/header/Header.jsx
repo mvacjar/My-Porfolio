@@ -87,13 +87,16 @@ export default function Header() {
                   </a>
                 </button>
                 <button className="main-logo">
-                  <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
+                  <a
+                    href={`mailto:${import.meta.env.VITE_EMAIL}`}
+                    rel="noopener noreferrer"
+                  >
                     <img src={email} alt="gmail" />
                   </a>
                 </button>
                 <button className="main-logo">
                   <a
-                    href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
+                    href={import.meta.env.VITE_CV}
                     download
                     target="_blank"
                     rel="noopener noreferrer"
@@ -108,7 +111,7 @@ export default function Header() {
                 <div className="main-container-button">
                   <button className="main-button">
                     <a
-                      href="mailto:mvacjar@gmail.com"
+                      href={`mailto:${import.meta.env.VITE_EMAIL}`}
                       rel="noopener noreferrer"
                     >
                       HIRE ME

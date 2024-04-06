@@ -110,7 +110,10 @@ export default function Footer() {
                 </a>
               </button>
               <button className="footer-logo">
-                <a href="mailto:mvacjar@gmail.com" rel="noopener noreferrer">
+                <a
+                  href={`mailto:${import.meta.env.VITE_EMAIL}`}
+                  rel="noopener noreferrer"
+                >
                   <img src={email} alt="email logo" loading="lazy" />
                 </a>
               </button>
