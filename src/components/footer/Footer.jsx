@@ -1,5 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
@@ -9,9 +12,11 @@ import "./footer.css";
 
 export default function Footer() {
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault(e);
+    setIsLoading(true);
 
     emailjs
       .sendForm(
@@ -25,12 +30,16 @@ export default function Footer() {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Message Sent!");
+          toast.success("Message sent successfully! 🦾");
         },
         (error) => {
-          console.log("Message Not Sent!", error.text);
+          console.log(error.text);
+          toast.error("Something went wrong 🥲, please try again later!");
         }
-      );
+      )
+      .finally(() => {
+        setIsLoading(false);
+      });
     e.target.reset();
   };
 
@@ -69,11 +78,14 @@ export default function Footer() {
               placeholder="Message"
               name="message"
             ></textarea>
-            <input
+            <button
               type="submit"
-              value="SEND MESSAGE"
+              disabled={isLoading}
               className="footer-button"
-            />
+            >
+              {isLoading ? "LOADING.." : "SEND MESSAGE"}
+              <ToastContainer />
+            </button>
           </section>
         </form>
         <article className="footer-logos-container">
