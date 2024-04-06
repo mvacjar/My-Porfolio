@@ -51,10 +51,10 @@ export default function Projects() {
               </figure>
               <div className="description-container">
                 <span className="card-project-description">
-                  This is a full-stack project where you can create, update and
-                  deleted tasks in a cyberpunk style. The aim of this project
-                  was to learn more about and to practice React, Node.js,
-                  Express, and PostgreSQL.
+                  In this full-stack ToDo List you can create, update and delete
+                  tasks. And all in a webpage with a cyberpunk design. The aim
+                  of this project was to learn more about React, Node, Express,
+                  and PostgreSQL.
                 </span>
                 <div className="main-logos-container">
                   <button className="main-logo">
