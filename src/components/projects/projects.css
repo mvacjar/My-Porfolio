@@ -78,7 +78,7 @@
 .card-project-title {
   color: var(--color-creme);
   text-align: center;
-  font-size: clamp(1.5rem, 4vw, 5rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   transition: transform 0.3s ease-out;
 }
 
@@ -107,6 +107,7 @@
   max-width: 35rem;
   height: auto;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .description-container {

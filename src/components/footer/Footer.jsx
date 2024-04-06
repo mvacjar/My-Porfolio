@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
+import phone from "../../assets/images/phone.svg";
 import cv from "../../assets/images/cv.png";
 import "./../../../index.css";
 import "./footer.css";
@@ -111,6 +112,16 @@ export default function Footer() {
               </button>
               <button className="footer-logo">
                 <a
+                  href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={cv} alt="curriculum logo" loading="lazy" />
+                </a>
+              </button>
+              <button className="footer-logo">
+                <a
                   href={`mailto:${import.meta.env.VITE_EMAIL}`}
                   rel="noopener noreferrer"
                 >
@@ -119,12 +130,11 @@ export default function Footer() {
               </button>
               <button className="footer-logo">
                 <a
-                  href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
-                  download
+                  href={`tel:${import.meta.env.VITE_PHONE}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={cv} alt="curriculum logo" loading="lazy" />
+                  <img src={phone} alt="phone" loading="lazy" />
                 </a>
               </button>
             </section>

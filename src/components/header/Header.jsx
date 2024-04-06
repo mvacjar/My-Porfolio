@@ -2,6 +2,7 @@ import nav_logo from "../../assets/images/nav_logo.jpeg";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
+import phone from "../../assets/images/phone.svg";
 import cv from "../../assets/images/cv.png";
 import arrow from "../../assets/images/arrow_down.png";
 import "../../../index.css";
@@ -53,7 +54,7 @@ export default function Header() {
                   ABOUT ME
                 </Link>
               </li>
-              {/* <li className="nav-link">
+              <li className="nav-link">
                 <Link
                   to="/#Contact"
                   smooth={true}
@@ -62,7 +63,7 @@ export default function Header() {
                 >
                   CONTACT
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </nav>
           <main>
@@ -88,6 +89,16 @@ export default function Header() {
                 </button>
                 <button className="main-logo">
                   <a
+                    href={import.meta.env.VITE_CV}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={cv} alt="curriculum" />
+                  </a>
+                </button>
+                <button className="main-logo">
+                  <a
                     href={`mailto:${import.meta.env.VITE_EMAIL}`}
                     rel="noopener noreferrer"
                   >
@@ -96,12 +107,11 @@ export default function Header() {
                 </button>
                 <button className="main-logo">
                   <a
-                    href={import.meta.env.VITE_CV}
-                    download
+                    href={`tel:${import.meta.env.VITE_PHONE}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={cv} alt="curriculum" />
+                    <img src={phone} alt="phone" loading="lazy" />
                   </a>
                 </button>
               </section>
