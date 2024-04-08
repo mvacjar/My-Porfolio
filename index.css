@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /* --- Reset and Global Style--- */
 :root {
   --font-size-xs: 1rem;

@@ -22,7 +22,7 @@ import "./skills.css";
 export default function Skills() {
   return (
     <div>
-      <article className="skills-container">
+      <article className="skills-container" id="Skills">
         <div className="marquee-skills-container">
           <div className="marquee-skills-wrapper">
             <h1 className="marquee-skills-title">MY KEY COMPETENCES</h1>

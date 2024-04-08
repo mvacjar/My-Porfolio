@@ -36,6 +36,16 @@ export default function Header() {
             <ul className="nav-links">
               <li className="nav-link">
                 <Link
+                  to="/#Skills"
+                  smooth={true}
+                  duration={500}
+                  className="link"
+                >
+                  SKILLS
+                </Link>
+              </li>
+              <li className="nav-link">
+                <Link
                   to="/#Projects"
                   smooth={true}
                   duration={500}
