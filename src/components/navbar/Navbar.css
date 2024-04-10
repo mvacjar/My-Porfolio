@@ -1,0 +1,84 @@
+.nav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-container {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: auto;
+    z-index: 100;
+  }
+
+  .menu-wrapper {
+    padding: 1rem;
+    background-color: var(--color-black);
+    border-radius: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .react-icons:hover {
+    color: var(--color-creme);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+  }
+
+  .link {
+    color: var(--color-orange);
+    line-height: 4rem;
+    padding: 2rem;
+  }
+
+  .link:hover {
+    color: var(--color-creme);
+  }
+
+  .nav-link {
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    color: var(--color-orange);
+    font-weight: 800;
+    margin: 0 1rem;
+  }
+
+  .nav-link:hover {
+    transition: transform 0.1s ease-out;
+    transform: scale(1.1);
+  }
+
+  .nav-link:active {
+    transform: scale(0.95);
+  }
+
+  .nav-link:active {
+    color: none;
+  }
+
+  .card-project-title:hover {
+    transform: scale(1.1);
+  }
+
+  .card-project-title:active {
+    transform: scale(0.95);
+  }
+}

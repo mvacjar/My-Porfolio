@@ -1,4 +1,3 @@
-import nav_logo from "../../assets/images/nav_logo.jpeg";
 import github from "../../assets/images/github.png";
 import linkedIn from "../../assets/images/linkedin.png";
 import email from "../../assets/images/email.png";
@@ -9,6 +8,7 @@ import "../../../index.css";
 import "./header.css";
 
 import { HashLink as Link } from "react-router-hash-link";
+import Navbar from "../navbar/Navbar";
 
 export default function Header() {
   return (
@@ -24,58 +24,51 @@ export default function Header() {
           />
         </div>
         <div className="black_wall">
-          <nav className="nav-container">
-            <figure className="nav-logo">
-              <img
-                src={nav_logo}
-                className="nav-logo"
-                alt="Profile picture"
-                loading="lazy"
-              />
-            </figure>
-            <ul className="nav-links">
-              <li className="nav-link">
+          <nav className="navbar-container">
+            <ul className="navbar-links">
+              <li className="navbar-link">
                 <Link
                   to="/#Skills"
                   smooth={true}
                   duration={500}
-                  className="link"
+                  className="link-title"
                 >
                   SKILLS
                 </Link>
               </li>
-              <li className="nav-link">
+              <li className="navbar-link">
                 <Link
                   to="/#Projects"
                   smooth={true}
                   duration={500}
-                  className="link"
+                  className="link-title"
                 >
                   PROJECTS
                 </Link>
               </li>
-              <li className="nav-link">
+              <li className="navbar-link">
                 <Link
                   to="/#About"
                   smooth={true}
                   duration={500}
-                  className="link"
+                  className="link-title"
                 >
-                  ABOUT ME
+                  ABOUT
                 </Link>
               </li>
-              <li className="nav-link">
+              <li className="navbar-link">
                 <Link
                   to="/#Contact"
                   smooth={true}
                   duration={500}
-                  className="link"
+                  className="link-title"
                 >
                   CONTACT
                 </Link>
               </li>
             </ul>
           </nav>
+          <Navbar />
           <main>
             <article className="main-container">
               <section className="main-logos">
