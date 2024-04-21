@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url("../../assets/images/background_azahar.png");
+  background-image: url('../../assets/images/background_azahar.png');
   background-size: cover;
   transform: translateZ(-1px) scale(1);
   z-index: -1;
@@ -21,6 +21,13 @@
   padding: 0.5rem 1rem 0.5rem 0rem;
   z-index: 100;
 }
+
+.logo {
+  min-width: 7rem;
+  max-width: 7rem;
+  padding-left: 1rem;
+}
+
 .navbar-links {
   display: flex;
   flex-direction: row;
@@ -67,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 10rem 0rem 0rem 1rem;
+  padding: 5rem 0rem 0rem 1rem;
 }
 
 .main-logos {
@@ -110,7 +117,7 @@
   background-clip: text;
   font-size: clamp(2rem, 11vw, 10rem);
   color: transparent;
-  background-image: url("../../assets/images/background_azahar.png");
+  background-image: url('../../assets/images/background_azahar.png');
 }
 
 @keyframes type {
