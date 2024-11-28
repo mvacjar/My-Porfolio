@@ -3,11 +3,11 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import github from "../../assets/images/github.png";
-import linkedIn from "../../assets/images/linkedin.png";
-import email from "../../assets/images/email.png";
-import phone from "../../assets/images/phone.svg";
-import cv from "../../assets/images/cv.png";
+import github from "/images/github.png";
+import linkedIn from "/images/linkedin.png";
+import email from "/images/email.png";
+import phone from "/images/phone.svg";
+import cv from "/images/cv.png";
 import "./../../../index.css";
 import "./footer.css";
 

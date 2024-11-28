@@ -1,21 +1,4 @@
-import react from "../../assets/images/react.svg";
-import html from "../../assets/images/html5.png";
-import css from "../../assets/images/css3.png";
-import js from "../../assets/images/js.png";
-import nodejs from "../../assets/images/nodejs.png";
-import bootstrap from "../../assets/images/bootstrap.png";
-import tailwind from "../../assets/images/tailwind1.png";
-import ps from "../../assets/images/ps.png";
-import ai from "../../assets/images/ai.png";
-import next from "../../assets/images/next.png";
-import trello from "../../assets/images/trello.png";
-import seo from "../../assets/images/seo.png";
-import github from "../../assets/images/github.png";
-import wip from "../../assets/images/wip.png";
-import sql from "../../assets/images/sql.png";
-import postman from "../../assets/images/postman.svg";
-import psql from "../../assets/images/psql.png";
-
+import ICON_LIST from './icon-list.js';
 import "./../../../index.css";
 import "./skills.css";
 
@@ -35,6 +18,24 @@ export default function Skills() {
         </div>
         <section className="skills-section-container">
           <div className="skills-section-wrapper">
+            {ICON_LIST.map((icon) => (
+              <div key={icon.id} className="skills-div">
+                <img src={icon.src} alt={icon.alt} className="skills-img" loading="lazy"/>
+                <p className="skills-text">{icon.alt}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </article>
+    </div>
+  );
+}
+
+
+
+
+
+ {/* <div className="skills-section-wrapper">
             <div className="skills-div">
               <img
                 className="skills-img"
@@ -189,9 +190,4 @@ export default function Skills() {
               />
               <p className="skills-text">AND MORE</p>
             </div>
-          </div>
-        </section>
-      </article>
-    </div>
-  );
-}
+          </div> */}

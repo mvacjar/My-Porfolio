@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url('../../assets/images/background_azahar.png');
+  background-image: url('/images/background_azahar.png');
   background-size: cover;
   transform: translateZ(-1px) scale(1);
   z-index: -1;
@@ -117,7 +117,7 @@
   background-clip: text;
   font-size: clamp(2rem, 11vw, 10rem);
   color: transparent;
-  background-image: url('../../assets/images/background_azahar.png');
+  background-image: url('/images/background_azahar.png');
 }
 
 @keyframes type {
@@ -155,17 +155,10 @@
   width: 0;
   overflow: hidden;
   white-space: nowrap;
-
   animation: type 6s steps(44) 1s infinite, blink 0.5s steps(1) infinite;
 }
 
-.main-container-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.main-button {
+.main-hireMe-button {
   border: none;
   border-radius: 15px;
   padding: 0.3rem 4rem;
@@ -173,14 +166,10 @@
   font-weight: 800;
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   background-color: var(--color-orange);
-  transition: transform 0.1s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
-.main-button:hover {
-  transform: scale(1.1);
-}
-
-.main-button:active {
+.main-hireMe-button:active {
   transform: scale(0.95);
 }
 
@@ -197,22 +186,6 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-}
-
-@keyframes moveDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.arrow-container:hover {
-  animation: moveDown 1s ease-out infinite;
 }
 
 .arrow-text {
@@ -260,7 +233,7 @@
   }
 
   .main-container {
-    padding: 10rem 0rem 0rem 1rem;
+    padding: 5rem 0rem 0rem 1rem;
   }
 
   .main-title {
@@ -269,6 +242,7 @@
   }
 
   .main-logos {
+    margin-top: -4rem;
     margin-bottom: 0rem;
   }
 
@@ -286,8 +260,18 @@
     margin-bottom: 1rem;
   }
 
-  .main-button {
+  .main-hireMe-button {
     font-size: clamp(0.7rem, 4vw, 1rem);
     margin: 1rem;
   }
+
+  .arrow-text {
+    padding: 0rem;
+  }
+
+  .arrow-img {
+    width: 1.5rem;
+  }
 }
+
+

@@ -1,10 +1,10 @@
-import hinder from "../../assets/images/hinder.png";
-import amazonSnake from "../../assets/images/amazon_snake.png";
-import weather from "../../assets/images/weather.png";
-import plants from "../../assets/images/plants.png";
-import github from "../../assets/images/github.png";
-import website from "../../assets/images/website.png";
-import fullstack from "../../assets/images/fullstack.png";
+import inksired from "/images/inksired.png";
+import amazonSnake from "/images/amazon_snake.png";
+import weather from "/images/weather.png";
+import github from "/images/github.png";
+import hinder from "/images/hinder.png";
+import website from "/images/website.png";
+import fullstack from "/images/fullstack.png";
 import "./../../../index.css";
 import "./projects.css";
 
@@ -29,6 +29,52 @@ export default function Projects() {
           </div>
 
           <div className="card-project-container">
+            <section className="card-project-item">
+              <h2 className="card-project-title">
+                <a
+                  className="title-link"
+                  href="https://inksired.vercel.app/"
+                  target="_blank"
+                >
+                  Inksired e-Commerce
+                </a>
+              </h2>
+              <figure className="card-image-container">
+                <a href="https://github.com/mvacjar/ToDoFullstack">
+                  <img
+                    src={inksired}
+                    className="card-image"
+                    alt="Mockup"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div className="description-container">
+                <span className="card-project-description">
+                  Complete website built from scratch for the Hyper Island Frontend Developer final project, featuring a scalable Next.js frontend optimized for SEO. Implemented with JavaScript, React, and several libraries like Yup, Formik, Lodash, and Luxon for streamlined form handling and data manipulation. Utilized Strapi for content management, Node.js for server-side functionality, and Stripe for payments. Deployed using Vercel and Railway with cloud storage on AWS.
+                </span>
+                <div className="main-logos-container">
+                  <button className="main-logo">
+                    <a
+                      href="https://github.com/mvacjar/inksired-web"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={github} alt="github" loading="lazy" />
+                    </a>
+                  </button>
+                  <button className="main-logo">
+                    <a
+                      href="https://inksired.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={website} alt="website" loading="lazy" />
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </section>
             <section className="card-project-item">
               <h2 className="card-project-title">
                 <a

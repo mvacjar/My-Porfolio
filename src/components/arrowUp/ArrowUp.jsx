@@ -1,4 +1,4 @@
-import arrowUp from "../../assets/images/arrow_up.png";
+import arrowUp from "/images/arrow_up.png";
 import "./arrowUp.css";
 
 import { HashLink as Link } from "react-router-hash-link";

@@ -1,17 +1,24 @@
-import github from '../../assets/images/github.png';
-import linkedIn from '../../assets/images/linkedin.png';
-import email from '../../assets/images/email.png';
-import phone from '../../assets/images/phone.svg';
-import cv from '../../assets/images/cv.png';
-import arrow from '../../assets/images/arrow_down.png';
-import logo from '../../assets/images/LogoDark.svg';
+import github from '/images/github.png';
+import linkedIn from '/images/linkedin.png';
+import email from '/images/email.png';
+import phone from '/images/phone.svg';
+import cv from '/images/cv.png';
+import arrow from '/images/arrow_down.png';
+import logo from '/images/LogoDark.svg';
 import '../../../index.css';
 import './header.css';
 
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import Navbar from '../navbar/Navbar';
 
 export default function Header() {
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className='header-container' id='Header'>
@@ -32,9 +39,8 @@ export default function Header() {
               </figure>
               <li className='navbar-link'>
                 <Link
-                  to='/#Skills'
-                  smooth={true}
-                  duration={500}
+                  to='/'
+                  onClick={() => smoothScroll('Skills')}
                   className='link-title'
                 >
                   SKILLS
@@ -42,9 +48,8 @@ export default function Header() {
               </li>
               <li className='navbar-link'>
                 <Link
-                  to='/#Projects'
-                  smooth={true}
-                  duration={500}
+                  to='/'
+                  onClick={() => smoothScroll('Projects')}
                   className='link-title'
                 >
                   PROJECTS
@@ -52,9 +57,8 @@ export default function Header() {
               </li>
               <li className='navbar-link'>
                 <Link
-                  to='/#About'
-                  smooth={true}
-                  duration={500}
+                  to='/about'
+                  onClick={() => smoothScroll('About')}
                   className='link-title'
                 >
                   ABOUT
@@ -62,9 +66,8 @@ export default function Header() {
               </li>
               <li className='navbar-link'>
                 <Link
-                  to='/#Contact'
-                  smooth={true}
-                  duration={500}
+                  to='/'
+                  onClick={() => smoothScroll('Contact')}
                   className='link-title'
                 >
                   CONTACT
@@ -125,8 +128,8 @@ export default function Header() {
               <section className='main-title'>
                 <h1 className='main-name'>MARIA VACA JAREÑO</h1>
                 <h2 className='main-profession'>FRONTEND DEVELOPER</h2>
-                <div className='main-container-button'>
-                  <button className='main-button'>
+                <div className='main-container-hireMe-button'>
+                  <button className='main-hireMe-button'>
                     <a
                       href={`mailto:${import.meta.env.VITE_EMAIL}`}
                       rel='noopener noreferrer'
