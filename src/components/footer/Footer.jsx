@@ -112,7 +112,7 @@ export default function Footer() {
               </button>
               <button className="footer-logo">
                 <a
-                  href="https://drive.google.com/file/d/1VJjf3yXN7AOJofODHYAlqnK3fE3j69p9/view?usp=sharing"
+                  href={import.meta.env.VITE_CV}
                   download
                   target="_blank"
                   rel="noopener noreferrer"
