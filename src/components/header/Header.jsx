@@ -104,7 +104,7 @@ export default function Header() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <img src={cv} alt='curriculum' />
+                    <img src={cv} alt='curriculum'  />
                   </a>
                 </button>
                 <button className='main-logo'>
