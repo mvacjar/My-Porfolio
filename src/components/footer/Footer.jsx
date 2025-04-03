@@ -117,7 +117,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={cv} alt="curriculum logo" loading="lazy"  />
+                  <img src={cv} alt="curriculum logo" loading="lazy" />
                 </a>
               </button>
               <button className="footer-logo">
